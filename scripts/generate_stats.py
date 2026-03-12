@@ -11,6 +11,7 @@ from typing import Dict, List, Tuple
 
 API_REST = "https://api.github.com"
 API_GRAPHQL = "https://api.github.com/graphql"
+TEMPLATE_VERSION = "v2"
 
 
 # ---------- HTTP helpers ----------
@@ -92,7 +93,6 @@ def fetch_viewer_basics(token: str) -> dict:
 
 
 def fetch_contrib_window(token: str, date_from: dt.date, date_to: dt.date) -> dict:
-    # GitHub limitation: contributionsCollection window must be <= 1 year.
     frm = f"{date_from.isoformat()}T00:00:00Z"
     to = f"{date_to.isoformat()}T23:59:59Z"
     query = """
@@ -127,7 +127,6 @@ def collect_daily_contributions(token: str, start_date: dt.date, end_date: dt.da
             for day in week["contributionDays"]:
                 d = day["date"]
                 c = int(day["contributionCount"])
-                # Keep max in case of accidental overlap
                 if c > daily.get(d, 0):
                     daily[d] = c
         cur = win_end + dt.timedelta(days=1)
@@ -192,7 +191,6 @@ def compute_streaks(daily: Dict[str, int], today: dt.date) -> dict:
             run_start = None
         d += dt.timedelta(days=1)
 
-    # Current streak: valid if latest active day is today or yesterday.
     positive_days = sorted((dt.date.fromisoformat(k) for k, v in daily.items() if v > 0))
     if not positive_days:
         current = 0
@@ -224,7 +222,7 @@ def compute_streaks(daily: Dict[str, int], today: dt.date) -> dict:
     }
 
 
-# ---------- SVG renderers ----------
+# ---------- SVG helpers ----------
 
 def svg_header(width: int, height: int, aria_label: str) -> str:
     return f"""<svg width=\"{width}\" height=\"{height}\" viewBox=\"0 0 {width} {height}\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"{html.escape(aria_label)}\">"""
@@ -232,27 +230,21 @@ def svg_header(width: int, height: int, aria_label: str) -> str:
 
 def svg_styles() -> str:
     return """
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1220"/>
-      <stop offset="100%" stop-color="#111827"/>
-    </linearGradient>
-  </defs>
   <style>
-    .title { font: 700 28px 'Inter', 'Segoe UI', sans-serif; fill: #f8fafc; }
-    .sub { font: 500 14px 'Inter', 'Segoe UI', sans-serif; fill: #94a3b8; }
-    .label { font: 600 18px 'Inter', 'Segoe UI', sans-serif; fill: #dbe7ff; }
-    .value { font: 700 20px 'Inter', 'Segoe UI', sans-serif; fill: #22d3ee; }
-    .muted { font: 500 13px 'Inter', 'Segoe UI', sans-serif; fill: #94a3b8; }
-    .chip { fill: #111a2d; stroke: #23324f; }
-    .bar-bg { fill: #1f2937; }
-    .bar-fg { fill: #22d3ee; }
+    .title { font: 700 22px 'Inter', 'Segoe UI', sans-serif; fill: #c9d1d9; }
+    .sub { font: 500 12px 'Inter', 'Segoe UI', sans-serif; fill: #8b949e; }
+    .label { font: 600 14px 'Inter', 'Segoe UI', sans-serif; fill: #c9d1d9; }
+    .value { font: 700 14px 'Inter', 'Segoe UI', sans-serif; fill: #58a6ff; }
+    .muted { font: 500 12px 'Inter', 'Segoe UI', sans-serif; fill: #8b949e; }
+    .divider { stroke: #30363d; stroke-width: 1; }
+    .bar-bg { fill: #21262d; }
+    .bar-fg { fill: #58a6ff; }
   </style>
 """
 
 
 def render_stats_svg(stats: dict, title: str, updated_human: str) -> str:
-    width, height = 860, 330
+    width, height = 740, 240
     rows: List[Tuple[str, str]] = [
         ("⭐ Stars (owned repos)", short(stats["stars_earned"])),
         ("🧩 Commits (last 365d)", short(stats["commits_last_year"])),
@@ -261,87 +253,89 @@ def render_stats_svg(stats: dict, title: str, updated_human: str) -> str:
         ("📦 Contributed repos (last 365d)", short(stats["contributed_repos_last_year"])),
     ]
 
+    start_y = 92
+    row_h = 26
     lines = []
-    y = 102
-    for label, value in rows:
-        lines.append(f'<rect x="34" y="{y - 24}" width="792" height="34" rx="8" class="chip"/>')
-        lines.append(f'<text x="48" y="{y}" class="label">{html.escape(label)}</text>')
-        lines.append(f'<text x="808" y="{y}" text-anchor="end" class="value">{html.escape(value)}</text>')
-        y += 44
+    for idx, (label, value) in enumerate(rows):
+        y = start_y + idx * row_h
+        lines.append(f'<text x="28" y="{y}" class="label">{html.escape(label)}</text>')
+        lines.append(f'<text x="712" y="{y}" text-anchor="end" class="value">{html.escape(value)}</text>')
+        if idx < len(rows) - 1:
+            lines.append(f'<line x1="28" y1="{y+8}" x2="712" y2="{y+8}" class="divider"/>')
 
     return (
         svg_header(width, height, f"{title} stats")
         + svg_styles()
-        + f'''<rect x="2" y="2" width="{width-4}" height="{height-4}" rx="18" fill="url(#bg)" stroke="#1f2937"/>
-  <text x="34" y="45" class="title">{html.escape(title)} · Overview</text>
-  <text x="34" y="68" class="sub">Private + public metrics from GitHub API</text>
+        + f'''<rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="28" y="36" class="title">{html.escape(title)} · Overview</text>
+  <text x="28" y="56" class="sub">Private + public metrics</text>
   {"".join(lines)}
-  <text x="34" y="314" class="muted">Updated: {html.escape(updated_human)}</text>
+  <text x="28" y="222" class="muted">Updated: {html.escape(updated_human)}</text>
 </svg>'''
     )
 
 
 def render_top_langs_svg(stats: dict, title: str, updated_human: str) -> str:
-    width, height = 860, 340
-    langs = stats["languages_top"][:7]
+    width, height = 740, 250
+    langs = stats["languages_top"][:6]
     max_bytes = max((int(x["bytes"]) for x in langs), default=1)
 
     rows = []
-    y = 98
+    y = 94
     for item in langs:
         name = item["name"]
         value = int(item["bytes"])
         pct = float(item["percent"])
-        bar_w = int((value / max_bytes) * 430)
+        bar_w = int((value / max_bytes) * 320)
 
-        rows.append(f'<text x="48" y="{y}" class="label">{html.escape(name)}</text>')
-        rows.append(f'<rect x="290" y="{y-16}" width="450" height="14" rx="7" class="bar-bg"/>')
-        rows.append(f'<rect x="290" y="{y-16}" width="{bar_w}" height="14" rx="7" class="bar-fg"/>')
+        rows.append(f'<text x="28" y="{y}" class="label">{html.escape(name)}</text>')
+        rows.append(f'<rect x="250" y="{y-12}" width="340" height="10" rx="5" class="bar-bg"/>')
+        rows.append(f'<rect x="250" y="{y-12}" width="{bar_w}" height="10" rx="5" class="bar-fg"/>')
         rows.append(
-            f'<text x="808" y="{y}" text-anchor="end" class="value">{html.escape(short(value))} · {pct:.1f}%</text>'
+            f'<text x="712" y="{y}" text-anchor="end" class="value">{html.escape(short(value))} · {pct:.1f}%</text>'
         )
-        y += 34
+        y += 26
 
     return (
         svg_header(width, height, f"{title} top languages")
         + svg_styles()
-        + f'''<rect x="2" y="2" width="{width-4}" height="{height-4}" rx="18" fill="url(#bg)" stroke="#1f2937"/>
-  <text x="34" y="45" class="title">{html.escape(title)} · Top Languages</text>
-  <text x="34" y="68" class="sub">Aggregated bytes across owned non-fork repositories</text>
+        + f'''<rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="28" y="36" class="title">{html.escape(title)} · Top Languages</text>
+  <text x="28" y="56" class="sub">Owned non-fork repos · bytes</text>
   {"".join(rows)}
-  <text x="34" y="324" class="muted">Updated: {html.escape(updated_human)}</text>
+  <text x="28" y="232" class="muted">Updated: {html.escape(updated_human)}</text>
 </svg>'''
     )
 
 
 def render_streak_svg(stats: dict, title: str, updated_human: str) -> str:
-    width, height = 860, 260
+    width, height = 740, 190
     streak = stats["streak"]
 
-    cards = [
-        ("Current streak", str(streak["current"]), streak["current_start"] or "—"),
-        ("Longest streak", str(streak["longest"]), streak["longest_start"] or "—"),
-        ("Active days", str(streak["active_days"]), "all time"),
-        ("Contributions", short(streak["total_contributions"]), "all time"),
+    items = [
+        ("Current streak", f"{streak['current']} days"),
+        ("Longest streak", f"{streak['longest']} days"),
+        ("Active days", f"{streak['active_days']}"),
+        ("Contributions", short(streak["total_contributions"])),
     ]
 
-    blocks = []
-    x = 34
-    for label, value, sub in cards:
-        blocks.append(f'<rect x="{x}" y="88" width="188" height="120" rx="12" class="chip"/>')
-        blocks.append(f'<text x="{x+12}" y="116" class="sub">{html.escape(label)}</text>')
-        blocks.append(f'<text x="{x+12}" y="154" class="title" style="font-size:34px">{html.escape(value)}</text>')
-        blocks.append(f'<text x="{x+12}" y="182" class="muted">{html.escape(sub)}</text>')
-        x += 202
+    lines = []
+    x1, x2 = 28, 382
+    y1, y2 = 92, 128
+    positions = [(x1, y1), (x2, y1), (x1, y2), (x2, y2)]
+
+    for (label, value), (x, y) in zip(items, positions):
+        lines.append(f'<text x="{x}" y="{y}" class="label">{html.escape(label)}</text>')
+        lines.append(f'<text x="{x}" y="{y+18}" class="value">{html.escape(value)}</text>')
 
     return (
-        svg_header(width, height, f"{title} streak stats")
+        svg_header(width, height, f"{title} streak")
         + svg_styles()
-        + f'''<rect x="2" y="2" width="{width-4}" height="{height-4}" rx="18" fill="url(#bg)" stroke="#1f2937"/>
-  <text x="34" y="45" class="title">{html.escape(title)} · Streak</text>
-  <text x="34" y="68" class="sub">Calculated from daily contribution calendar (private + public)</text>
-  {"".join(blocks)}
-  <text x="34" y="244" class="muted">Updated: {html.escape(updated_human)}</text>
+        + f'''<rect x="0.5" y="0.5" width="{width-1}" height="{height-1}" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <text x="28" y="36" class="title">{html.escape(title)} · Streak</text>
+  <text x="28" y="56" class="sub">From daily contribution calendar</text>
+  {"".join(lines)}
+  <text x="28" y="172" class="muted">Updated: {html.escape(updated_human)}</text>
 </svg>'''
     )
 
@@ -368,12 +362,10 @@ def main() -> None:
     owned_non_fork = [r for r in repos if not r.get("fork")]
     stars = sum(int(r.get("stargazers_count", 0)) for r in owned_non_fork)
 
-    # Last year window
     today = dt.datetime.now(dt.timezone.utc).date()
     last_year_from = today - dt.timedelta(days=364)
     contrib_1y = fetch_contrib_window(token, last_year_from, today)
 
-    # All-time (chunked yearly)
     created_at = parse_gh_datetime(viewer["createdAt"]).date()
     daily = collect_daily_contributions(token, created_at, today)
     streak = compute_streaks(daily, today)
@@ -394,6 +386,7 @@ def main() -> None:
     updated_human = now_utc.strftime("%Y-%m-%d %H:%M UTC")
 
     stats = {
+        "template_version": TEMPLATE_VERSION,
         "login": login,
         "name": display_name,
         "generated_at_utc": now_utc.isoformat(),
