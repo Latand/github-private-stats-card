@@ -411,6 +411,19 @@ def main() -> None:
     }
 
     os.makedirs("generated", exist_ok=True)
+
+    previous_path = "generated/stats.json"
+    if os.path.exists(previous_path):
+        with open(previous_path, "r", encoding="utf-8") as f:
+            prev = json.load(f)
+        prev_cmp = dict(prev)
+        prev_cmp.pop("generated_at_utc", None)
+        now_cmp = dict(stats)
+        now_cmp.pop("generated_at_utc", None)
+        if prev_cmp == now_cmp:
+            print("No metric changes; generated artifacts left untouched")
+            return
+
     with open("generated/stats.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
         f.write("\n")
