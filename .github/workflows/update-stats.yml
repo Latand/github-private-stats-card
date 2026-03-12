@@ -36,13 +36,13 @@ jobs:
 
       - name: Commit & push if changed
         run: |
-          if git diff --quiet -- generated/stats.svg generated/stats.json; then
+          if git diff --quiet -- generated; then
             echo "No stats changes"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/stats.svg generated/stats.json
+          git add generated
           git commit -m "chore(stats): daily refresh"
           git push
