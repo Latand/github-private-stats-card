@@ -2,14 +2,14 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-03-19T06:35:58.653440+00:00",
+  "generated_at_utc": "2026-03-20T06:33:08.588515+00:00",
   "repos_owned_total": 127,
   "repos_owned_non_fork": 95,
   "repos_private": 56,
   "stars_earned": 730,
   "commits_last_year": 85,
-  "contributions_last_year": 4045,
-  "prs_total": 826,
+  "contributions_last_year": 4049,
+  "prs_total": 828,
   "issues_total": 404,
   "contributed_repos_last_year": 12,
   "streak": {
@@ -20,23 +20,23 @@
     "longest_start": "2026-01-19",
     "longest_end": "2026-03-19",
     "active_days": 1293,
-    "total_contributions": 10059
+    "total_contributions": 10063
   },
   "languages_top": [
     {
       "name": "Python",
       "bytes": 6087515,
-      "percent": 48.72
+      "percent": 48.71
     },
     {
       "name": "HTML",
       "bytes": 3347162,
-      "percent": 26.79
+      "percent": 26.78
     },
     {
       "name": "TypeScript",
-      "bytes": 1286956,
-      "percent": 10.3
+      "bytes": 1289675,
+      "percent": 10.32
     },
     {
       "name": "TeX",
