@@ -2,66 +2,66 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-03-22T06:30:43.990578+00:00",
+  "generated_at_utc": "2026-03-23T06:42:09.036490+00:00",
   "repos_owned_total": 127,
   "repos_owned_non_fork": 95,
   "repos_private": 56,
-  "stars_earned": 730,
+  "stars_earned": 731,
   "commits_last_year": 85,
-  "contributions_last_year": 4047,
-  "prs_total": 828,
-  "issues_total": 406,
+  "contributions_last_year": 4068,
+  "prs_total": 830,
+  "issues_total": 408,
   "contributed_repos_last_year": 12,
   "streak": {
-    "current": 63,
+    "current": 64,
     "current_start": "2026-01-19",
-    "current_end": "2026-03-22",
-    "longest": 63,
+    "current_end": "2026-03-23",
+    "longest": 64,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-03-22",
-    "active_days": 1296,
-    "total_contributions": 10071
+    "longest_end": "2026-03-23",
+    "active_days": 1297,
+    "total_contributions": 10092
   },
   "languages_top": [
     {
       "name": "Python",
       "bytes": 6087515,
-      "percent": 48.66
+      "percent": 48.39
     },
     {
       "name": "HTML",
       "bytes": 3347162,
-      "percent": 26.75
+      "percent": 26.61
     },
     {
       "name": "TypeScript",
-      "bytes": 1302746,
-      "percent": 10.41
+      "bytes": 1371291,
+      "percent": 10.9
     },
     {
       "name": "TeX",
       "bytes": 555711,
-      "percent": 4.44
+      "percent": 4.42
     },
     {
       "name": "Shell",
       "bytes": 394467,
-      "percent": 3.15
+      "percent": 3.14
     },
     {
       "name": "Fluent",
       "bytes": 250433,
-      "percent": 2.0
+      "percent": 1.99
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 215015,
-      "percent": 1.72
+      "percent": 1.71
     },
     {
       "name": "JavaScript",
-      "bytes": 118406,
-      "percent": 0.95
+      "bytes": 118426,
+      "percent": 0.94
     },
     {
       "name": "SCSS",
@@ -71,7 +71,7 @@
     {
       "name": "Vue",
       "bytes": 55698,
-      "percent": 0.45
+      "percent": 0.44
     },
     {
       "name": "Dockerfile",
