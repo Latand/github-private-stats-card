@@ -2,41 +2,41 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-04-02T06:42:40.840589+00:00",
+  "generated_at_utc": "2026-04-03T06:41:01.332615+00:00",
   "repos_owned_total": 127,
   "repos_owned_non_fork": 95,
   "repos_private": 56,
   "stars_earned": 730,
-  "commits_last_year": 85,
-  "contributions_last_year": 4427,
-  "prs_total": 925,
-  "issues_total": 475,
+  "commits_last_year": 76,
+  "contributions_last_year": 4436,
+  "prs_total": 928,
+  "issues_total": 486,
   "contributed_repos_last_year": 12,
   "streak": {
-    "current": 74,
+    "current": 75,
     "current_start": "2026-01-19",
-    "current_end": "2026-04-02",
-    "longest": 74,
+    "current_end": "2026-04-03",
+    "longest": 75,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-04-02",
-    "active_days": 1307,
-    "total_contributions": 10471
+    "longest_end": "2026-04-03",
+    "active_days": 1308,
+    "total_contributions": 10489
   },
   "languages_top": [
     {
       "name": "Python",
       "bytes": 6106767,
-      "percent": 45.71
+      "percent": 45.7
     },
     {
       "name": "HTML",
       "bytes": 3347162,
-      "percent": 25.06
+      "percent": 25.05
     },
     {
       "name": "TypeScript",
-      "bytes": 2049420,
-      "percent": 15.34
+      "bytes": 2051986,
+      "percent": 15.36
     },
     {
       "name": "TeX",
@@ -46,7 +46,7 @@
     {
       "name": "Shell",
       "bytes": 404137,
-      "percent": 3.03
+      "percent": 3.02
     },
     {
       "name": "Fluent",
