@@ -2,14 +2,14 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-05-30T07:17:01.285112+00:00",
+  "generated_at_utc": "2026-05-31T07:33:55.766690+00:00",
   "repos_owned_total": 128,
   "repos_owned_non_fork": 96,
   "repos_private": 56,
   "stars_earned": 726,
   "commits_last_year": 212,
-  "contributions_last_year": 5535,
-  "prs_total": 1325,
+  "contributions_last_year": 5540,
+  "prs_total": 1328,
   "issues_total": 774,
   "contributed_repos_last_year": 11,
   "streak": {
@@ -20,7 +20,7 @@
     "longest_start": "2026-01-19",
     "longest_end": "2026-05-30",
     "active_days": 1365,
-    "total_contributions": 11922
+    "total_contributions": 11929
   },
   "languages_top": [
     {
