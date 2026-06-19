@@ -2,86 +2,86 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-06-18T08:01:09.476132+00:00",
-  "repos_owned_total": 130,
-  "repos_owned_non_fork": 98,
-  "repos_private": 56,
+  "generated_at_utc": "2026-06-19T08:13:02.527836+00:00",
+  "repos_owned_total": 131,
+  "repos_owned_non_fork": 99,
+  "repos_private": 57,
   "stars_earned": 729,
   "commits_last_year": 273,
-  "contributions_last_year": 5740,
-  "prs_total": 1461,
-  "issues_total": 828,
+  "contributions_last_year": 5877,
+  "prs_total": 1489,
+  "issues_total": 851,
   "contributed_repos_last_year": 13,
   "streak": {
-    "current": 151,
+    "current": 152,
     "current_start": "2026-01-19",
-    "current_end": "2026-06-18",
-    "longest": 151,
+    "current_end": "2026-06-19",
+    "longest": 152,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-06-18",
-    "active_days": 1384,
-    "total_contributions": 12293
+    "longest_end": "2026-06-19",
+    "active_days": 1385,
+    "total_contributions": 12436
   },
   "languages_top": [
     {
       "name": "Python",
-      "bytes": 6973174,
-      "percent": 35.88
+      "bytes": 7853555,
+      "percent": 38.25
     },
     {
       "name": "TypeScript",
-      "bytes": 5266730,
-      "percent": 27.1
+      "bytes": 5479484,
+      "percent": 26.69
     },
     {
       "name": "HTML",
-      "bytes": 3474487,
-      "percent": 17.88
+      "bytes": 3474792,
+      "percent": 16.92
     },
     {
       "name": "TeX",
       "bytes": 1522269,
-      "percent": 7.83
+      "percent": 7.41
     },
     {
       "name": "JavaScript",
       "bytes": 987165,
-      "percent": 5.08
+      "percent": 4.81
     },
     {
       "name": "Shell",
-      "bytes": 404137,
-      "percent": 2.08
+      "bytes": 404695,
+      "percent": 1.97
     },
     {
       "name": "Fluent",
       "bytes": 250433,
-      "percent": 1.29
+      "percent": 1.22
     },
     {
       "name": "Jupyter Notebook",
       "bytes": 215015,
-      "percent": 1.11
+      "percent": 1.05
     },
     {
       "name": "CSS",
-      "bytes": 122740,
-      "percent": 0.63
+      "bytes": 125118,
+      "percent": 0.61
     },
     {
       "name": "SCSS",
       "bytes": 61289,
-      "percent": 0.32
+      "percent": 0.3
     },
     {
       "name": "Vue",
       "bytes": 55698,
-      "percent": 0.29
+      "percent": 0.27
     },
     {
       "name": "Dockerfile",
       "bytes": 30910,
-      "percent": 0.16
+      "percent": 0.15
     }
   ]
 }
