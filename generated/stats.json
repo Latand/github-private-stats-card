@@ -2,56 +2,56 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-07-07T09:59:28.721189+00:00",
+  "generated_at_utc": "2026-07-08T08:42:29.987887+00:00",
   "repos_owned_total": 132,
   "repos_owned_non_fork": 100,
   "repos_private": 57,
   "stars_earned": 732,
-  "commits_last_year": 538,
-  "contributions_last_year": 6395,
-  "prs_total": 1610,
-  "issues_total": 914,
-  "contributed_repos_last_year": 14,
+  "commits_last_year": 555,
+  "contributions_last_year": 6442,
+  "prs_total": 1622,
+  "issues_total": 933,
+  "contributed_repos_last_year": 13,
   "streak": {
-    "current": 170,
+    "current": 171,
     "current_start": "2026-01-19",
-    "current_end": "2026-07-07",
-    "longest": 170,
+    "current_end": "2026-07-08",
+    "longest": 171,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-07-07",
-    "active_days": 1403,
-    "total_contributions": 13108
+    "longest_end": "2026-07-08",
+    "active_days": 1404,
+    "total_contributions": 13166
   },
   "languages_top": [
     {
       "name": "Python",
       "bytes": 8501284,
-      "percent": 35.69
+      "percent": 35.65
     },
     {
       "name": "TypeScript",
-      "bytes": 7240747,
-      "percent": 30.4
+      "bytes": 7262076,
+      "percent": 30.45
     },
     {
       "name": "HTML",
       "bytes": 3477570,
-      "percent": 14.6
+      "percent": 14.58
     },
     {
       "name": "JavaScript",
       "bytes": 1841950,
-      "percent": 7.73
+      "percent": 7.72
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 6.41
+      "percent": 6.4
     },
     {
       "name": "Shell",
-      "bytes": 412052,
-      "percent": 1.73
+      "bytes": 414312,
+      "percent": 1.74
     },
     {
       "name": "Fluent",
@@ -65,7 +65,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 133225,
+      "bytes": 134043,
       "percent": 0.56
     },
     {
@@ -80,8 +80,8 @@
     },
     {
       "name": "Dockerfile",
-      "bytes": 30910,
-      "percent": 0.13
+      "bytes": 35964,
+      "percent": 0.15
     }
   ]
 }
