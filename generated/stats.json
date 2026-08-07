@@ -2,56 +2,56 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-08-06T08:50:50.049666+00:00",
+  "generated_at_utc": "2026-08-07T07:38:52.575204+00:00",
   "repos_owned_total": 135,
   "repos_owned_non_fork": 103,
   "repos_private": 58,
   "stars_earned": 739,
-  "commits_last_year": 2434,
-  "contributions_last_year": 9132,
-  "prs_total": 2195,
-  "issues_total": 1389,
+  "commits_last_year": 2453,
+  "contributions_last_year": 9064,
+  "prs_total": 2211,
+  "issues_total": 1398,
   "contributed_repos_last_year": 14,
   "streak": {
-    "current": 200,
+    "current": 201,
     "current_start": "2026-01-19",
-    "current_end": "2026-08-06",
-    "longest": 200,
+    "current_end": "2026-08-07",
+    "longest": 201,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-08-06",
-    "active_days": 1433,
-    "total_contributions": 16188
+    "longest_end": "2026-08-07",
+    "active_days": 1434,
+    "total_contributions": 16239
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 24158311,
-      "percent": 58.83
+      "bytes": 24404205,
+      "percent": 59.07
     },
     {
       "name": "Python",
-      "bytes": 8543285,
-      "percent": 20.81
+      "bytes": 8546302,
+      "percent": 20.69
     },
     {
       "name": "HTML",
-      "bytes": 3484281,
-      "percent": 8.49
+      "bytes": 3484419,
+      "percent": 8.43
     },
     {
       "name": "JavaScript",
       "bytes": 1959676,
-      "percent": 4.77
+      "percent": 4.74
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 3.72
+      "percent": 3.69
     },
     {
       "name": "Shell",
       "bytes": 511450,
-      "percent": 1.25
+      "percent": 1.24
     },
     {
       "name": "Fluent",
@@ -65,7 +65,7 @@
     },
     {
       "name": "CSS",
-      "bytes": 185677,
+      "bytes": 187913,
       "percent": 0.45
     },
     {
@@ -76,7 +76,7 @@
     {
       "name": "Vue",
       "bytes": 55698,
-      "percent": 0.14
+      "percent": 0.13
     },
     {
       "name": "Dockerfile",
