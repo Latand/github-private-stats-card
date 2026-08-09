@@ -2,55 +2,55 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-08-08T07:11:18.960842+00:00",
-  "repos_owned_total": 135,
-  "repos_owned_non_fork": 103,
-  "repos_private": 58,
+  "generated_at_utc": "2026-08-09T07:12:45.754989+00:00",
+  "repos_owned_total": 136,
+  "repos_owned_non_fork": 104,
+  "repos_private": 59,
   "stars_earned": 739,
-  "commits_last_year": 2463,
-  "contributions_last_year": 9029,
-  "prs_total": 2223,
-  "issues_total": 1411,
+  "commits_last_year": 2467,
+  "contributions_last_year": 9046,
+  "prs_total": 2227,
+  "issues_total": 1413,
   "contributed_repos_last_year": 14,
   "streak": {
-    "current": 202,
+    "current": 203,
     "current_start": "2026-01-19",
-    "current_end": "2026-08-08",
-    "longest": 202,
+    "current_end": "2026-08-09",
+    "longest": 203,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-08-08",
-    "active_days": 1435,
-    "total_contributions": 16277
+    "longest_end": "2026-08-09",
+    "active_days": 1436,
+    "total_contributions": 16295
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 24555779,
-      "percent": 59.22
+      "bytes": 24830023,
+      "percent": 59.07
     },
     {
       "name": "Python",
-      "bytes": 8546302,
-      "percent": 20.61
+      "bytes": 8835176,
+      "percent": 21.02
     },
     {
       "name": "HTML",
-      "bytes": 3484419,
-      "percent": 8.4
+      "bytes": 3484997,
+      "percent": 8.29
     },
     {
       "name": "JavaScript",
-      "bytes": 1959676,
-      "percent": 4.73
+      "bytes": 1959751,
+      "percent": 4.66
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 3.68
+      "percent": 3.63
     },
     {
       "name": "Shell",
-      "bytes": 511450,
+      "bytes": 515231,
       "percent": 1.23
     },
     {
@@ -61,7 +61,7 @@
     {
       "name": "Jupyter Notebook",
       "bytes": 215015,
-      "percent": 0.52
+      "percent": 0.51
     },
     {
       "name": "CSS",
@@ -70,7 +70,7 @@
     },
     {
       "name": "SCSS",
-      "bytes": 61289,
+      "bytes": 63160,
       "percent": 0.15
     },
     {
