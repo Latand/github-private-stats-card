@@ -2,55 +2,55 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-09-04T11:12:56.005094+00:00",
+  "generated_at_utc": "2026-09-05T10:30:37.658699+00:00",
   "repos_owned_total": 140,
   "repos_owned_non_fork": 108,
   "repos_private": 61,
   "stars_earned": 743,
-  "commits_last_year": 2715,
-  "contributions_last_year": 10093,
-  "prs_total": 2608,
-  "issues_total": 1834,
+  "commits_last_year": 2730,
+  "contributions_last_year": 10143,
+  "prs_total": 2632,
+  "issues_total": 1844,
   "contributed_repos_last_year": 15,
   "streak": {
-    "current": 229,
+    "current": 230,
     "current_start": "2026-01-19",
-    "current_end": "2026-09-04",
-    "longest": 229,
+    "current_end": "2026-09-05",
+    "longest": 230,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-09-04",
-    "active_days": 1452,
-    "total_contributions": 17627
+    "longest_end": "2026-09-05",
+    "active_days": 1453,
+    "total_contributions": 17685
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 35164457,
-      "percent": 64.85
+      "bytes": 35407140,
+      "percent": 64.99
     },
     {
       "name": "Python",
-      "bytes": 10555877,
-      "percent": 19.47
+      "bytes": 10566503,
+      "percent": 19.39
     },
     {
       "name": "HTML",
       "bytes": 3489260,
-      "percent": 6.43
+      "percent": 6.4
     },
     {
       "name": "JavaScript",
       "bytes": 2046731,
-      "percent": 3.77
+      "percent": 3.76
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 2.81
+      "percent": 2.8
     },
     {
       "name": "Shell",
-      "bytes": 537127,
+      "bytes": 540433,
       "percent": 0.99
     },
     {
@@ -61,7 +61,7 @@
     {
       "name": "Jupyter Notebook",
       "bytes": 215015,
-      "percent": 0.4
+      "percent": 0.39
     },
     {
       "name": "CSS",
