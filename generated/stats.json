@@ -2,60 +2,60 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-09-16T11:26:24.239928+00:00",
+  "generated_at_utc": "2026-09-17T11:35:41.333555+00:00",
   "repos_owned_total": 141,
   "repos_owned_non_fork": 109,
   "repos_private": 61,
   "stars_earned": 747,
-  "commits_last_year": 2854,
-  "contributions_last_year": 10589,
-  "prs_total": 2768,
-  "issues_total": 2004,
+  "commits_last_year": 2856,
+  "contributions_last_year": 10571,
+  "prs_total": 2770,
+  "issues_total": 2006,
   "contributed_repos_last_year": 16,
   "streak": {
-    "current": 241,
+    "current": 242,
     "current_start": "2026-01-19",
-    "current_end": "2026-09-16",
-    "longest": 241,
+    "current_end": "2026-09-17",
+    "longest": 242,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-09-16",
-    "active_days": 1464,
-    "total_contributions": 18224
+    "longest_end": "2026-09-17",
+    "active_days": 1465,
+    "total_contributions": 18231
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 41420544,
-      "percent": 66.48
+      "bytes": 41475352,
+      "percent": 66.37
     },
     {
       "name": "Python",
-      "bytes": 11424967,
-      "percent": 18.34
+      "bytes": 11559702,
+      "percent": 18.5
     },
     {
       "name": "HTML",
       "bytes": 3588803,
-      "percent": 5.76
+      "percent": 5.74
     },
     {
       "name": "JavaScript",
       "bytes": 2785358,
-      "percent": 4.47
+      "percent": 4.46
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 2.45
+      "percent": 2.44
     },
     {
       "name": "Shell",
-      "bytes": 540045,
-      "percent": 0.87
+      "bytes": 540184,
+      "percent": 0.86
     },
     {
       "name": "CSS",
-      "bytes": 313006,
+      "bytes": 313181,
       "percent": 0.5
     },
     {
@@ -66,7 +66,7 @@
     {
       "name": "Jupyter Notebook",
       "bytes": 215015,
-      "percent": 0.35
+      "percent": 0.34
     },
     {
       "name": "SCSS",
