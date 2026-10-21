@@ -2,65 +2,65 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-10-20T11:29:23.584933+00:00",
+  "generated_at_utc": "2026-10-21T11:41:45.145927+00:00",
   "repos_owned_total": 144,
   "repos_owned_non_fork": 111,
   "repos_private": 63,
   "stars_earned": 761,
-  "commits_last_year": 4579,
-  "contributions_last_year": 14251,
-  "prs_total": 4078,
-  "issues_total": 2426,
+  "commits_last_year": 4605,
+  "contributions_last_year": 14352,
+  "prs_total": 4147,
+  "issues_total": 2428,
   "contributed_repos_last_year": 16,
   "streak": {
-    "current": 275,
+    "current": 276,
     "current_start": "2026-01-19",
-    "current_end": "2026-10-20",
-    "longest": 275,
+    "current_end": "2026-10-21",
+    "longest": 276,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-10-20",
-    "active_days": 1498,
-    "total_contributions": 22127
+    "longest_end": "2026-10-21",
+    "active_days": 1499,
+    "total_contributions": 22250
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 89685845,
-      "percent": 72.79
+      "bytes": 91315427,
+      "percent": 72.38
     },
     {
       "name": "Python",
-      "bytes": 17290440,
-      "percent": 14.03
+      "bytes": 17792170,
+      "percent": 14.1
     },
     {
       "name": "JavaScript",
-      "bytes": 6598708,
-      "percent": 5.36
+      "bytes": 7132311,
+      "percent": 5.65
     },
     {
       "name": "HTML",
-      "bytes": 3683306,
-      "percent": 2.99
+      "bytes": 3687869,
+      "percent": 2.92
     },
     {
       "name": "C++",
-      "bytes": 2479488,
-      "percent": 2.01
+      "bytes": 2738921,
+      "percent": 2.17
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 1.24
+      "percent": 1.21
     },
     {
       "name": "CSS",
-      "bytes": 634686,
-      "percent": 0.52
+      "bytes": 641471,
+      "percent": 0.51
     },
     {
       "name": "Shell",
-      "bytes": 581173,
+      "bytes": 589012,
       "percent": 0.47
     },
     {
@@ -81,7 +81,7 @@
     {
       "name": "Vue",
       "bytes": 55698,
-      "percent": 0.05
+      "percent": 0.04
     }
   ]
 }
