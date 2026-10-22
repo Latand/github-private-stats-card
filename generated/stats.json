@@ -2,65 +2,65 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-10-21T11:41:45.145927+00:00",
+  "generated_at_utc": "2026-10-22T11:44:26.307610+00:00",
   "repos_owned_total": 144,
   "repos_owned_non_fork": 111,
   "repos_private": 63,
   "stars_earned": 761,
-  "commits_last_year": 4605,
-  "contributions_last_year": 14352,
-  "prs_total": 4147,
-  "issues_total": 2428,
+  "commits_last_year": 4626,
+  "contributions_last_year": 14431,
+  "prs_total": 4191,
+  "issues_total": 2429,
   "contributed_repos_last_year": 16,
   "streak": {
-    "current": 276,
+    "current": 277,
     "current_start": "2026-01-19",
-    "current_end": "2026-10-21",
-    "longest": 276,
+    "current_end": "2026-10-22",
+    "longest": 277,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-10-21",
-    "active_days": 1499,
-    "total_contributions": 22250
+    "longest_end": "2026-10-22",
+    "active_days": 1500,
+    "total_contributions": 22337
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 91315427,
-      "percent": 72.38
+      "bytes": 92308593,
+      "percent": 72.21
     },
     {
       "name": "Python",
-      "bytes": 17792170,
-      "percent": 14.1
+      "bytes": 18085274,
+      "percent": 14.15
     },
     {
       "name": "JavaScript",
-      "bytes": 7132311,
-      "percent": 5.65
+      "bytes": 7504515,
+      "percent": 5.87
     },
     {
       "name": "HTML",
-      "bytes": 3687869,
-      "percent": 2.92
+      "bytes": 3693469,
+      "percent": 2.89
     },
     {
       "name": "C++",
       "bytes": 2738921,
-      "percent": 2.17
+      "percent": 2.14
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 1.21
+      "percent": 1.19
     },
     {
       "name": "CSS",
-      "bytes": 641471,
-      "percent": 0.51
+      "bytes": 641730,
+      "percent": 0.5
     },
     {
       "name": "Shell",
-      "bytes": 589012,
+      "bytes": 594540,
       "percent": 0.47
     },
     {
