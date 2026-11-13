@@ -2,56 +2,56 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-11-12T15:16:34.640293+00:00",
+  "generated_at_utc": "2026-11-13T14:29:38.712382+00:00",
   "repos_owned_total": 148,
   "repos_owned_non_fork": 113,
   "repos_private": 64,
-  "stars_earned": 765,
-  "commits_last_year": 4729,
-  "contributions_last_year": 15278,
-  "prs_total": 4543,
+  "stars_earned": 766,
+  "commits_last_year": 4740,
+  "contributions_last_year": 15384,
+  "prs_total": 4564,
   "issues_total": 2482,
   "contributed_repos_last_year": 16,
   "streak": {
-    "current": 298,
+    "current": 299,
     "current_start": "2026-01-19",
-    "current_end": "2026-11-12",
-    "longest": 298,
+    "current_end": "2026-11-13",
+    "longest": 299,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-11-12",
-    "active_days": 1521,
-    "total_contributions": 23375
+    "longest_end": "2026-11-13",
+    "active_days": 1522,
+    "total_contributions": 23489
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 110639310,
+      "bytes": 111749153,
       "percent": 73.69
     },
     {
       "name": "Python",
-      "bytes": 20203173,
-      "percent": 13.46
+      "bytes": 20582308,
+      "percent": 13.57
     },
     {
       "name": "JavaScript",
-      "bytes": 9251798,
-      "percent": 6.16
+      "bytes": 9262038,
+      "percent": 6.11
     },
     {
       "name": "HTML",
       "bytes": 3713880,
-      "percent": 2.47
+      "percent": 2.45
     },
     {
       "name": "C++",
       "bytes": 2765583,
-      "percent": 1.84
+      "percent": 1.82
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 1.02
+      "percent": 1.01
     },
     {
       "name": "CSS",
@@ -61,7 +61,7 @@
     {
       "name": "Shell",
       "bytes": 608614,
-      "percent": 0.41
+      "percent": 0.4
     },
     {
       "name": "Fluent",
@@ -75,7 +75,7 @@
     },
     {
       "name": "SCSS",
-      "bytes": 90928,
+      "bytes": 91384,
       "percent": 0.06
     },
     {
