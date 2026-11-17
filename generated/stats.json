@@ -2,66 +2,66 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-11-16T15:35:52.195398+00:00",
+  "generated_at_utc": "2026-11-17T15:55:01.812341+00:00",
   "repos_owned_total": 148,
   "repos_owned_non_fork": 113,
   "repos_private": 64,
-  "stars_earned": 764,
-  "commits_last_year": 4745,
-  "contributions_last_year": 15544,
-  "prs_total": 4615,
-  "issues_total": 2484,
+  "stars_earned": 763,
+  "commits_last_year": 4748,
+  "contributions_last_year": 15575,
+  "prs_total": 4628,
+  "issues_total": 2489,
   "contributed_repos_last_year": 16,
   "streak": {
-    "current": 302,
+    "current": 303,
     "current_start": "2026-01-19",
-    "current_end": "2026-11-16",
-    "longest": 302,
+    "current_end": "2026-11-17",
+    "longest": 303,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-11-16",
-    "active_days": 1525,
-    "total_contributions": 23666
+    "longest_end": "2026-11-17",
+    "active_days": 1526,
+    "total_contributions": 23708
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 115376180,
-      "percent": 73.86
+      "bytes": 116688668,
+      "percent": 73.9
     },
     {
       "name": "Python",
-      "bytes": 20995149,
-      "percent": 13.44
+      "bytes": 21350630,
+      "percent": 13.52
     },
     {
       "name": "JavaScript",
-      "bytes": 9616522,
-      "percent": 6.16
+      "bytes": 9625166,
+      "percent": 6.1
     },
     {
       "name": "HTML",
       "bytes": 3724162,
-      "percent": 2.38
+      "percent": 2.36
     },
     {
       "name": "C++",
       "bytes": 2765583,
-      "percent": 1.77
+      "percent": 1.75
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 0.98
+      "percent": 0.97
     },
     {
       "name": "CSS",
       "bytes": 680645,
-      "percent": 0.44
+      "percent": 0.43
     },
     {
       "name": "Shell",
       "bytes": 619181,
-      "percent": 0.4
+      "percent": 0.39
     },
     {
       "name": "Fluent",
