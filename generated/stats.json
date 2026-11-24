@@ -2,56 +2,56 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-11-23T17:57:59.424774+00:00",
+  "generated_at_utc": "2026-11-24T17:36:46.746404+00:00",
   "repos_owned_total": 150,
   "repos_owned_non_fork": 115,
   "repos_private": 66,
   "stars_earned": 766,
-  "commits_last_year": 4785,
-  "contributions_last_year": 15813,
-  "prs_total": 4720,
-  "issues_total": 2526,
+  "commits_last_year": 4798,
+  "contributions_last_year": 15882,
+  "prs_total": 4735,
+  "issues_total": 2527,
   "contributed_repos_last_year": 16,
   "streak": {
-    "current": 309,
+    "current": 310,
     "current_start": "2026-01-19",
-    "current_end": "2026-11-23",
-    "longest": 309,
+    "current_end": "2026-11-24",
+    "longest": 310,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-11-23",
-    "active_days": 1532,
-    "total_contributions": 23993
+    "longest_end": "2026-11-24",
+    "active_days": 1533,
+    "total_contributions": 24077
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 120236267,
-      "percent": 74.25
+      "bytes": 121880573,
+      "percent": 74.4
     },
     {
       "name": "Python",
-      "bytes": 21795573,
-      "percent": 13.46
+      "bytes": 22021681,
+      "percent": 13.44
     },
     {
       "name": "JavaScript",
-      "bytes": 9657773,
-      "percent": 5.96
+      "bytes": 9663983,
+      "percent": 5.9
     },
     {
       "name": "HTML",
       "bytes": 3724162,
-      "percent": 2.3
+      "percent": 2.27
     },
     {
       "name": "C++",
       "bytes": 2765583,
-      "percent": 1.71
+      "percent": 1.69
     },
     {
       "name": "TeX",
       "bytes": 1525953,
-      "percent": 0.94
+      "percent": 0.93
     },
     {
       "name": "CSS",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Shell",
-      "bytes": 621348,
+      "bytes": 624020,
       "percent": 0.38
     },
     {
@@ -76,7 +76,7 @@
     {
       "name": "Swift",
       "bytes": 170895,
-      "percent": 0.11
+      "percent": 0.1
     },
     {
       "name": "SCSS",
