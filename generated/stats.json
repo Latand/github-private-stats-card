@@ -2,51 +2,51 @@
   "template_version": "v2",
   "login": "Latand",
   "name": "Kostiantyn Kriuchkov",
-  "generated_at_utc": "2026-11-25T17:07:16.070093+00:00",
+  "generated_at_utc": "2026-11-26T16:48:05.639153+00:00",
   "repos_owned_total": 150,
   "repos_owned_non_fork": 115,
   "repos_private": 66,
   "stars_earned": 766,
-  "commits_last_year": 4812,
-  "contributions_last_year": 15976,
-  "prs_total": 4770,
+  "commits_last_year": 4827,
+  "contributions_last_year": 16003,
+  "prs_total": 4780,
   "issues_total": 2537,
   "contributed_repos_last_year": 16,
   "streak": {
-    "current": 311,
+    "current": 312,
     "current_start": "2026-01-19",
-    "current_end": "2026-11-25",
-    "longest": 311,
+    "current_end": "2026-11-26",
+    "longest": 312,
     "longest_start": "2026-01-19",
-    "longest_end": "2026-11-25",
-    "active_days": 1534,
-    "total_contributions": 24174
+    "longest_end": "2026-11-26",
+    "active_days": 1535,
+    "total_contributions": 24221
   },
   "languages_top": [
     {
       "name": "TypeScript",
-      "bytes": 123006721,
-      "percent": 74.54
+      "bytes": 124461154,
+      "percent": 74.73
     },
     {
       "name": "Python",
-      "bytes": 22093564,
-      "percent": 13.39
+      "bytes": 22125753,
+      "percent": 13.28
     },
     {
       "name": "JavaScript",
-      "bytes": 9666583,
-      "percent": 5.86
+      "bytes": 9685967,
+      "percent": 5.82
     },
     {
       "name": "HTML",
       "bytes": 3724162,
-      "percent": 2.26
+      "percent": 2.24
     },
     {
       "name": "C++",
       "bytes": 2765583,
-      "percent": 1.68
+      "percent": 1.66
     },
     {
       "name": "TeX",
@@ -55,12 +55,12 @@
     },
     {
       "name": "CSS",
-      "bytes": 686205,
+      "bytes": 692111,
       "percent": 0.42
     },
     {
       "name": "Shell",
-      "bytes": 624771,
+      "bytes": 625164,
       "percent": 0.38
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "name": "SCSS",
-      "bytes": 93433,
+      "bytes": 103057,
       "percent": 0.06
     }
   ]
